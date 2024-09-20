@@ -1,0 +1,30 @@
+﻿<Window x:Class="SimplyRugby2._0.LoginIdentifier"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimplyRugby2._0"
+        mc:Ignorable="d"
+        Title="LoginIdentifier" Height="450" Width="322">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="Black" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Who would you like to login as " VerticalAlignment="Top" FontFamily="Source Serif Pro Light" Foreground="White" Height="68" Width="188" FontSize="20">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF131111" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <Button x:Name="btn1" Content="Secretary" HorizontalAlignment="Left" Margin="32,102,0,0" VerticalAlignment="Top" Foreground="White" Background="Black" BorderBrush="#FFF9CF08" Height="39" Width="72" Click="btn1_Click"/>
+        <Button x:Name="btn2" Content="Coach" HorizontalAlignment="Left" Margin="197,165,0,0" VerticalAlignment="Top" Foreground="White" Background="Black" BorderBrush="#FFF9CF08" Height="41" Width="72" Click="btn2_Click"/>
+        <Button x:Name="btn3" Content="SeniorPlayer" HorizontalAlignment="Left" Margin="32,229,0,0" VerticalAlignment="Top" Foreground="White" Background="Black" BorderBrush="#FFF9CF08" Height="37" Width="84" Click="btn3_Click"/>
+        <Button x:Name="btn4" Content="JuniorPlayer" HorizontalAlignment="Left" Margin="197,323,0,0" VerticalAlignment="Top" Foreground="White" Background="Black" BorderBrush="#FFF9CF08" Height="37" Width="97" Click="btn4_Click"/>
+        <Button x:Name="btn5" Content="Back to Start" HorizontalAlignment="Left" Margin="32,364,0,0" VerticalAlignment="Top" Foreground="White" Background="Black" BorderBrush="#FFF9CF08" Height="37" Width="84" Click="btn5_Click"/>
+    </Grid>
+</Window>

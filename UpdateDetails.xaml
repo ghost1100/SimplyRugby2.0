@@ -1,0 +1,48 @@
+﻿<Window x:Class="SimplyRugby2._0.UpdateDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimplyRugby2._0"
+        mc:Ignorable="d"
+        Title="UpdateDetails" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="srchtxtbx" HorizontalAlignment="Left" Margin="26,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="bctd" Content="Back to dashboard" HorizontalAlignment="Left" Margin="20,391,0,0" VerticalAlignment="Top" Click="bctd_Click"/>
+        <Label Content="User ID:" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Searchbtn" Content="Search" HorizontalAlignment="Left" Margin="189,41,0,0" VerticalAlignment="Top" Click="Searchbtn_Click"/>
+        <ListBox x:Name="lstbox114" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="411,320,25,10"/>
+        <TextBox x:Name="ChangeNumber" HorizontalAlignment="Left" Margin="30,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="User Phone Number:" HorizontalAlignment="Left" Margin="20,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="User Email:" HorizontalAlignment="Left" Margin="20,161,0,0" VerticalAlignment="Top"/>
+        <Label Content="User Address:" HorizontalAlignment="Left" Margin="30,236,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ChangeEmail" HorizontalAlignment="Left" Margin="30,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ChangeAddress" HorizontalAlignment="Left" Margin="30,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="update_number" Content="update number" HorizontalAlignment="Left" Margin="171,119,0,0" VerticalAlignment="Top" Click="update_number_Click"/>
+        <Button x:Name="update_Email" Content="Update Email" HorizontalAlignment="Left" Margin="171,199,0,0" VerticalAlignment="Top" Click="update_Email_Click"/>
+        <Button x:Name="Update_Address" Content="Update Address" HorizontalAlignment="Left" Margin="171,273,0,0" VerticalAlignment="Top" Click="Update_Address_Click"/>
+        <Label Content="Contacts First Name:" HorizontalAlignment="Left" Margin="328,33,0,0" VerticalAlignment="Top"/>
+        <Label Content="Contacts Last Name:" HorizontalAlignment="Left" Margin="328,72,0,0" VerticalAlignment="Top"/>
+        <Label Content="Contacts Email:" HorizontalAlignment="Left" Margin="328,113,0,0" VerticalAlignment="Top"/>
+        <Label Content="Contacts Address:" HorizontalAlignment="Left" Margin="328,148,0,0" VerticalAlignment="Top"/>
+        <Label Content="Contacts Phone number:" HorizontalAlignment="Left" Margin="328,190,0,0" VerticalAlignment="Top"/>
+        <Label Content="Contacts DOB:" HorizontalAlignment="Left" Margin="328,231,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ContactFirstName" HorizontalAlignment="Left" Margin="467,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ContactLastName" HorizontalAlignment="Left" Margin="467,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ContactEmail" HorizontalAlignment="Left" Margin="435,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ContactAddress" HorizontalAlignment="Left" Margin="446,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ContactNumber" HorizontalAlignment="Left" Margin="484,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ContactDOB" HorizontalAlignment="Left" Margin="446,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="YY-MM-DD"/>
+        <Button x:Name="delete_old_emergency_contact" Content="Delete Old/All Emergency Contacts" HorizontalAlignment="Left" Margin="593,233,0,0" VerticalAlignment="Top" Click="delete_old_emergency_contact_Click"/>
+        <Button x:Name="add_new_emergency_contact" Content="Add New Emergency Contact" HorizontalAlignment="Left" Margin="625,192,0,0" VerticalAlignment="Top" Click="add_new_emergency_contact_Click"/>
+        <Label Content="Contacts ID:" HorizontalAlignment="Left" Margin="336,267,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ContactID" HorizontalAlignment="Left" Margin="446,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <RadioButton x:Name="UpdateSeniorPlayers" GroupName="Modifiers" Content="Update Senior Players" HorizontalAlignment="Left" Margin="116,331,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="UpdateCoaches" GroupName="Modifiers" Content="Update Coaches" HorizontalAlignment="Left" Margin="159,359,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="UpdateJuniorPlayers" GroupName="Modifiers" Content="Update Junior Players" HorizontalAlignment="Left" Margin="266,332,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="UpdateStaff" GroupName="Modifiers" Content="Update Staff" HorizontalAlignment="Left" Margin="281,359,0,0" VerticalAlignment="Top"/>
+        <Separator HorizontalAlignment="Left" Margin="627,74,0,0" VerticalAlignment="Top" Foreground="Black"/>
+        <Image Margin="608,23,17,300" Source="/logo.png" Stretch="Fill"/>
+
+    </Grid>
+</Window>

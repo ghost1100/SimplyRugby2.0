@@ -1,0 +1,20 @@
+﻿<Window x:Class="SimplyRugby2._0.SkillViewer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimplyRugby2._0"
+        mc:Ignorable="d"
+        Title="SkillViewer" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="SkillsDT"  d:ItemsSource="{d:SampleData ItemCount=5}" Margin="17,127,106,22"/>
+        <TextBox x:Name="playerskillID" HorizontalAlignment="Left" Margin="106,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Player ID:" HorizontalAlignment="Left" Margin="26,16,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="seniorskillsearch" Content="Look For a senior Player" HorizontalAlignment="Left" Margin="393,22,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="searchbtn1231" Content="Search" HorizontalAlignment="Left" Margin="272,21,0,0" VerticalAlignment="Top" Click="searchbtn1231_Click"/>
+        <Button x:Name="modifyskills" Content="Modify Player Skills" HorizontalAlignment="Left" Margin="647,22,0,0" VerticalAlignment="Top" Click="modifyskills_Click"/>
+        <Button x:Name="SkillClearbtn" Content="Clear Past Skills Record" HorizontalAlignment="Left" Margin="640,63,0,0" VerticalAlignment="Top" Click="SkillClearbtn_Click"/>
+        <Button x:Name="backtodashbtn" Content="Back to DashBoard" HorizontalAlignment="Left" Margin="21,58,0,0" VerticalAlignment="Top" Click="backtodashbtn_Click"/>
+
+    </Grid>
+</Window>

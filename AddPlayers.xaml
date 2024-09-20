@@ -1,0 +1,32 @@
+﻿<Window x:Class="SimplyRugby2._0.AddPlayers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimplyRugby2._0"
+        mc:Ignorable="d"
+        Title="AddPlayers" Height="450" Width="800">
+    <Grid>
+        <CheckBox x:Name="chkbox1" Content="Add Senior Player" HorizontalAlignment="Left" Margin="37,19,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="AddPlayerbtn" Content="Add Player" HorizontalAlignment="Left" Margin="708,389,0,0" VerticalAlignment="Top" Click="AddPlayerbtn_Click"/>
+        <TextBox x:Name="PlayerID" HorizontalAlignment="Left" Margin="37,110,0,0" TextWrapping="Wrap" Text="Player ID must be 8 digits " VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="PlayerFirstName" HorizontalAlignment="Left" Margin="37,154,0,0" TextWrapping="Wrap" Text="Players First name" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="PlayerLastName" HorizontalAlignment="Left" Margin="37,199,0,0" TextWrapping="Wrap" Text="Players Last name" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="PlayerNumber" HorizontalAlignment="Left" Margin="37,242,0,0" TextWrapping="Wrap" Text="Players PhoneNumber" VerticalAlignment="Top" Width="135"/>
+        <TextBox x:Name="PlayerEmail" HorizontalAlignment="Left" Margin="37,294,0,0" TextWrapping="Wrap" Text="Players Email" VerticalAlignment="Top" Width="148" Height="18"/>
+        <TextBox x:Name="PlayerAddress" HorizontalAlignment="Left" Margin="37,341,0,0" TextWrapping="Wrap" Text="Players Address" VerticalAlignment="Top" Width="135"/>
+        <Label Content="About Player:" HorizontalAlignment="Left" Margin="37,57,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PlayerDOB" HorizontalAlignment="Left" Margin="37,381,0,0" TextWrapping="Wrap" Text="Players DOB YY-MM-DD" VerticalAlignment="Top" Width="175" Height="32"/>
+        <Label Content="About Emergency Contact:" HorizontalAlignment="Left" Margin="400,57,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="backtodash3" Content="Back To DashBoard" HorizontalAlignment="Left" Margin="678,344,0,0" VerticalAlignment="Top" Click="backtodash3_Click"/>
+        <Label Content="if its not a senior player then no need to check the box" HorizontalAlignment="Left" Margin="177,16,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ContactID" HorizontalAlignment="Left" Margin="385,101,0,0" TextWrapping="Wrap" Text="EmergencyContact ID must be 8 digits" VerticalAlignment="Top" Width="210"/>
+        <TextBox x:Name="ContactFirstName" HorizontalAlignment="Left" Margin="385,145,0,0" TextWrapping="Wrap" Text="EmergencyContact FIrst Name" VerticalAlignment="Top" Width="210"/>
+        <TextBox x:Name="ContactLastName" HorizontalAlignment="Left" Margin="385,199,0,0" TextWrapping="Wrap" Text="EmergencyContact LastName" VerticalAlignment="Top" Width="210"/>
+        <TextBox x:Name="ContactNumber" HorizontalAlignment="Left" Margin="385,242,0,0" TextWrapping="Wrap" Text="EmergencyContact PhoneNumber" VerticalAlignment="Top" Width="210"/>
+        <TextBox x:Name="ContactEmail" HorizontalAlignment="Left" Margin="385,285,0,0" TextWrapping="Wrap" Text="EmergencyContact Email" VerticalAlignment="Top" Width="210"/>
+        <TextBox x:Name="ContactAddress" HorizontalAlignment="Left" Margin="385,336,0,0" TextWrapping="Wrap" Text="EmergencyContact Address" VerticalAlignment="Top" Width="210"/>
+        <TextBox x:Name="ContactDOB" HorizontalAlignment="Left" Margin="385,381,0,0" TextWrapping="Wrap" Text="EmergencyContact DOB YY-MM-DD" VerticalAlignment="Top" Width="231" Height="41"/>
+
+    </Grid>
+</Window>

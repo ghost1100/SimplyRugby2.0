@@ -1,0 +1,21 @@
+﻿<Window x:Class="SimplyRugby2._0.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimplyRugby2._0"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FFD04545" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="Startbtn" Content="Start" HorizontalAlignment="Center" Margin="0,347,0,46" Width="100" Foreground="White" Background="Black" BorderBrush="#FFF9CF08" Click="Startbtn_Click"/>
+        <Image HorizontalAlignment="Center" Height="184" Margin="0,77,0,0" Width="416" Stretch="UniformToFill" Source="/logo.png" VerticalAlignment="Top"/>
+        <Button x:Name="Quitbtn" Content="Quit" HorizontalAlignment="Left" Margin="741,385,0,0" VerticalAlignment="Top" Foreground="White" Background="Black" BorderBrush="#FFF9CF08" Click="Quitbtn_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="SimplyRugby2._0.AddStaffOrCoach"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimplyRugby2._0"
+        mc:Ignorable="d"
+        Title="AddStaffOrCoach" Height="450" Width="800">
+    <Grid>
+        <CheckBox x:Name="Coachchkbox" Content="Check the box if you want to add a Coach instead" HorizontalAlignment="Left" Margin="39,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="MemberID" HorizontalAlignment="Left" Margin="39,112,0,0" TextWrapping="Wrap" Text="Member ID must be 8 digits " VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="MemberFirstName" HorizontalAlignment="Left" Margin="39,156,0,0" TextWrapping="Wrap" Text="Member First name" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="MemberLastName" HorizontalAlignment="Left" Margin="39,201,0,0" TextWrapping="Wrap" Text="Member Last name" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="MemberNumber" HorizontalAlignment="Left" Margin="39,244,0,0" TextWrapping="Wrap" Text="Member PhoneNumber" VerticalAlignment="Top" Width="135"/>
+        <TextBox x:Name="MemberEmail" HorizontalAlignment="Left" Margin="39,296,0,0" TextWrapping="Wrap" Text="Member Email" VerticalAlignment="Top" Width="148" Height="18"/>
+        <TextBox x:Name="MemberAddress" HorizontalAlignment="Left" Margin="39,343,0,0" TextWrapping="Wrap" Text="Member Address" VerticalAlignment="Top" Width="135"/>
+        <TextBox x:Name="MemberDOB" HorizontalAlignment="Left" Margin="39,383,0,0" TextWrapping="Wrap" Text="Member DOB YY-MM-DD" VerticalAlignment="Top" Width="168" Height="28"/>
+        <TextBox x:Name="MemberContactID" HorizontalAlignment="Left" Margin="385,101,0,0" TextWrapping="Wrap" Text="EmergencyContact ID must be 8 digits" VerticalAlignment="Top" Width="210"/>
+        <TextBox x:Name="MemberContactFirstName" HorizontalAlignment="Left" Margin="385,145,0,0" TextWrapping="Wrap" Text="EmergencyContact FIrst Name" VerticalAlignment="Top" Width="210"/>
+        <TextBox x:Name="MemberContactLastName" HorizontalAlignment="Left" Margin="385,199,0,0" TextWrapping="Wrap" Text="EmergencyContact LastName" VerticalAlignment="Top" Width="210"/>
+        <TextBox x:Name="MemberContactNumber" HorizontalAlignment="Left" Margin="385,242,0,0" TextWrapping="Wrap" Text="EmergencyContact PhoneNumber" VerticalAlignment="Top" Width="210"/>
+        <TextBox x:Name="MemberContactEmail" HorizontalAlignment="Left" Margin="385,285,0,0" TextWrapping="Wrap" Text="EmergencyContact Email" VerticalAlignment="Top" Width="210"/>
+        <TextBox x:Name="MemberContactAddress" HorizontalAlignment="Left" Margin="385,336,0,0" TextWrapping="Wrap" Text="EmergencyContact Address" VerticalAlignment="Top" Width="210"/>
+        <TextBox x:Name="MemberContactDOB" HorizontalAlignment="Left" Margin="385,381,0,0" TextWrapping="Wrap" Text="EmergencyContact DOB YY-MM-DD" VerticalAlignment="Top" Width="241" Height="38"/>
+        <Label Content="About Member:" HorizontalAlignment="Left" Margin="39,66,0,0" VerticalAlignment="Top"/>
+        <Label Content="About Emergency Contact:" HorizontalAlignment="Left" Margin="385,66,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="dashbtn" Content="Back To DashBoard" HorizontalAlignment="Left" Margin="677,336,0,0" VerticalAlignment="Top" Click="dashbtn_Click"/>
+        <Button x:Name="AddStaffbtn" Content="Add Coach or Staff" HorizontalAlignment="Left" Margin="677,382,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,0.505" Click="AddStaffbtn_Click"/>
+
+    </Grid>
+</Window>
